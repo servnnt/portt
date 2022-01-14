@@ -29,7 +29,7 @@
 }
 
 .show-menu.hamburguer{
-    right: 18rem;
+    right: 16rem;
 }
 
 .line{
@@ -67,12 +67,13 @@
     opacity: 0;   
 }
 
-.hamburguer span :before{
+.hamburguer span::before{
+    content: "";
     position: absolute;
     border-right: .5rem solid #f2910d;
-    border-left: .5rem solid #f2910d;
-    border-top: .5rem solid #f2910d;
-    border-bottom: .5rem solid #f2910d;
+    border-left: .5rem solid transparent;
+    border-top: .5rem solid transparent;
+    border-bottom: .5rem solid transparent;
     left: -1.2rem;
 
 }
@@ -175,7 +176,7 @@ header{
     transition: all 1s;
 }
 
-.sidebar.show-menu{
+.show-menu.sidebar{
     right: 0;
 
 }
