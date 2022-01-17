@@ -28,7 +28,7 @@
     cursor: pointer;
 }
 
-.show-menu.hamburguer{
+.show-menu .hamburguer{
     right: 16rem;
 }
 
@@ -74,7 +74,7 @@
     border-left: .5rem solid transparent;
     border-top: .5rem solid transparent;
     border-bottom: .5rem solid transparent;
-    left: -1.2rem;
+    left: -1rem;
 
 }
 
@@ -174,9 +174,10 @@ header{
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 80;
 }
 
-.show-menu.sidebar{
+.show-menu .sidebar{
     right: 0;
 
 }
