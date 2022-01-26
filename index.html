@@ -172,15 +172,15 @@
                     <h1>Contato</h1>
                     <form>
                         <div class="input-group">
-                            <input type="text" class="field" id="nome">
+                            <input type="text" onclick="focarnome()" class="field" id="nome">
                             <label for="nome" class="field-label">Nome</label>
                         </div>
                         <div class="input-group">
-                            <input type="text" class="field" id="email">
+                            <input type="text" onclick="focaremail()" class="field" id="email">
                             <label for="email" class="field-label">E-mail</label>
                         </div>
                         <div class="input-group">
-                            <textarea class="field" id="mensagem"></textarea>
+                            <textarea class="field" onclick="focarmensagem()" id="mensagem"></textarea>
                             <label for="mensagem" class="field-label">Mensagem</label>
                         </div>
                         <button class="btn btn-submit" type="submit">Enviar</button>
@@ -193,5 +193,20 @@
 </body>
 
 <script src="script.js"></script>
+
+<script>
+    function focarnome(){
+        var b = document.getElementById("nome")
+        b.classList.add("field-focar")
+    }
+    function focaremail(){
+        var b = document.getElementById("email")
+        b.classList.add("field-focar")
+    }
+    function focarmensagem(){
+        var b = document.getElementById("mensagem")
+        b.classList.add("field-focar")
+    }
+</script>
 
 </html>

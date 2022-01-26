@@ -223,7 +223,7 @@ header{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    transition: background-color 1s;
+    transition: background-color 0.5s;
 }
 
 .social-media i:hover{
@@ -466,9 +466,12 @@ header{
 
 .input-group{
     position: relative;
+    flex-flow: column-reverse;
+    margin-bottom: 1em;
 }
 
 .field{
+    position: sticky;
     background: transparent;
     border: none;
     width: 20rem;
@@ -478,13 +481,15 @@ header{
     height: 3rem;
     outline: none;
     margin: 1rem 0;
+    
 }
 
 .input-group textarea{
     padding-top: 0.5rem;
     max-width: 25rem;
-    max-height: 5;
+    max-height: 15rem;
 }
+
 
 .field-label{
     position: absolute;
@@ -492,16 +497,18 @@ header{
     top: 2rem;
     font-size: 1.2rem;
     font-family: var(--font-secundary);
-    text-transform: uppercase;
+    text-transform: uppercase ; 
     transition: all 0.3s;
+    touch-action: manipulation; 
 }
 
-.field:focus ~ label{
-    top: 0  ;
+
+.field-focar ~ label{
+    top: 0;
     font-size: 0.7rem;
 }
 
-.field:focus{
+.field-focar{
     border-bottom: 1px solid;
 }
 
