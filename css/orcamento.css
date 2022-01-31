@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration:none ;
+}
+
+:root{
+    --font-primary: "Baloo Da 2", serif;
+    --font-secundary: "Josefin Slab", serif;
+    --font-action: "Muli", serif;
+}
+
+.sessao-orcamento{
+    width: 100%;
+    height: 100vh;
+    background-color: #181818;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orcamento-wrapper{
+    width: 60%;
+    height: 60%;
+    background-color: rgba(131, 120, 120, 0.918);
+    border-radius: 20px;
+    border-style: solid;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.sessao-orcamento h1{
+    position: absolute;
+    top: -2.5rem;
+    left: 2rem;
+    background: #656566;
+    background: -webkit-linear-gradient(to right, #4d4b4e, #878688);
+    background: linear-gradient(to left, #4d4b4e, #878688);
+    padding: 0.3rem; 
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    font-weight: lighter;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.sessao-orcamento form{
+    margin: 5rem;
+    display: grid;
+    grid-auto-columns: auto 1fr;
+    column-gap: 3rem;
+    row-gap: 3rem;
+}
+
+.sessao-orcamento label{
+    font-family: var(--font-action);
+    font-size: 1.5rem;
+}
+
+.sessao-orcamento input[type="number"]{
+    font-family: var(--font-secundary);
+    width: 4rem;
+    font-size: 2rem;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 0.3rem;
+}
+
+.btn-orcamento{
+    text-transform: uppercase;
+    padding: 1rem;
+    cursor: pointer;
+    grid-column: 2;
+}

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/orcamento.css">
     <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
@@ -188,11 +189,39 @@
                 </div>
             </div>
         </section>
+
+        <section class="sessao-orcamento" id="orcamento">
+            <div class="orcamento-wrapper">
+                <h1>Calcular o Orçamento</h1>
+                <form>
+                    <label for="quantidade">Quantidade de páginas</label>
+                    <input type="number" min="1" name="quantidade" id="quantidade">
+                    <label for="js">Preciso de um Script JS</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label>Layout</label>
+                        <div class="group-layout">
+                            <div>
+                                <input type="checkbox" name="layout" id="layout-y">
+                                <label for="layout-y">Preciso de um Layout</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="layout" id="layout-n">
+                                <label for="layout-n">Não preciso de um Layout</label>
+                            </div>
+                        </div>
+                    <label for="prazo">Prazo</label>
+                    <input type="range" name="prazo" id="prazo" min="1" max="8">
+                    <label id="preco"> 0,00 €</label>
+                    <button class="btn btn-orcamento" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
         
     </div>
 </body>
 
-<script src="script.js"></script>
+<script src="script/script.js"></script>
+<script src="script/orcamento.js"></script>
 
 <script>
     function focarnome(){
